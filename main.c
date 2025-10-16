@@ -1,22 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int counter;
+void f(void);
 
-void set_counter()
+
+
+int main(int argc, char *argv[])
 {
-     counter=20;
-}
-int main(void)
-{
-    printf("counter=%d\n",counter);
-    set_counter();
-    printf("counter=%d\n",counter);
-    
-    system("PAUSE");	
+    int i; 
+    for(i=0;i<5;i++)
+    {
+                    f();
+    } 
+    system("PAUSE");
     return 0;
 }
 
+void f(void)
+{
+     int i;
+     for(i=0;i<10;i++)
+     printf("#");
+     printf("\n");
+  
+}
 
 
     
