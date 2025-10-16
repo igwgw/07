@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     int i=10;
     
     printf("함수 호출 전 i=%d\n",i);
-    inc(i);
+    i=inc(i);//반환값 이용 
     printf("함수 호출 후 i=%d\n",i);
     system("PAUSE");	
     return 0;
